@@ -1,2 +1,2 @@
 # jcio-docker-nginx
-nginx for jcio mars
+nginx for jcio master
