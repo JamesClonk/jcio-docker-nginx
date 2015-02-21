@@ -11,6 +11,7 @@ fi
 JCIO_HOSTNAME=$1
 
 for file in `ls *.conf.tmpl`; do
+	echo "Prepare $file -> ${file%.*}"
 	sed "s/%JCIO_HOSTNAME%/${JCIO_HOSTNAME}/g" $file > ${file%.*}
 done
 
