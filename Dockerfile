@@ -1,7 +1,5 @@
 FROM nginx
 
-COPY nginx.conf /etc/nginx/nginx.conf
-
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY shipyard.conf /etc/nginx/conf.d/shipyard.conf
 RUN rm -f /etc/nginx/conf.d/example_ssl.conf
