@@ -15,4 +15,12 @@ for file in `ls *.conf.tmpl`; do
 	sed "s/%JCIO_HOSTNAME%/${JCIO_HOSTNAME}/g" $file > ${file%.*}
 done
 
+cp -v /root/.docker/server-cert.pem .
+cp -v /root/.docker/server-key.pem .
+
+docker build -t jcio-nginx-master .
+
+rm -vf server-cert.pem
+rm -vf server-key.pem
+
 exit 0

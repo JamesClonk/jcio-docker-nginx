@@ -2,4 +2,7 @@
 .gitignore
 README.md
 *.tmpl
-configure.sh
+build.sh
+*.pem
+*.crt
+*.key
