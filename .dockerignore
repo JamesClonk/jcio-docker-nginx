@@ -3,6 +3,3 @@
 README.md
 *.tmpl
 build.sh
-*.pem
-*.crt
-*.key
