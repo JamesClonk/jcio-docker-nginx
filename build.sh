@@ -18,6 +18,7 @@ done
 cp -v /root/.docker/server-cert.pem .
 cp -v /root/.docker/server-key.pem .
 
+docker rmi jcio-nginx-master || true
 docker build -t jcio-nginx-master .
 
 rm -vf server-cert.pem
